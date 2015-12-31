@@ -203,4 +203,21 @@ var PM_go_to_die = 'http://....'
 
 记得每天要备份。空间换时间
 
-#
+# 知道啥是 deep copy
+
+千万不要写这样的代码：
+```
+if(true){
+  left_button = create_a_button();
+  left_text = 'the text'
+}else{
+  right_button = create_a_button();
+  right_text = 'the text'
+}
+```
+
+我问，既然这两个分支都一样，干嘛要写两次呢？
+他不懂deep copy ...
+
+# 用好javascript中的return
+
